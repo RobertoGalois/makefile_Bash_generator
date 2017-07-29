@@ -1,7 +1,7 @@
 #!/bin/bash
 
-files_o=''				  #all .o files String
-prog_name='prog'		#exec file name, 'prog' by default
+files_o=''		#all .o files String
+prog_name='prog'	#exec file name, 'prog' by default
 
 #listing all .o files in a String like 'file1.o file2.o file3.o etc'
 for file in `ls *.c`
