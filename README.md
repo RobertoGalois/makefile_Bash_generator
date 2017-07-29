@@ -5,19 +5,7 @@ In the case that you have all C files in a folder, you put this script in the di
 
 ===============================
 
-.PHONY: clean
-.SUFFIXES:
-
-prog: calc.o main.o show.o
-	gcc calc.o main.o show.o -o prog
-calc.o: calc.c calc.h
-	gcc -c calc.c
-main.o: main.c show.h calc.h
-	gcc -c main.c
-show.o: show.c show.h calc.h
-	gcc -c show.c
-clean:
-	rm -f *.o prog
+cf makefile_example
 
 ===============================
   
